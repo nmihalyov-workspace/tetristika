@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>т_тристика</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="page, keywords">
+    <meta name="theme-color" content="#000000">
+    <meta name="copyright" content="Author">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+    <meta name="apple-mobile-web-app-title" content="Application Name">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="format-detection" content="telephone=no">
+        <meta property="og:title" content>
+        <meta property="og:url" content>
+        <meta property="og:type" content="website">
+        <meta property="og:image" content>
+        <meta property="og:description" content>
+    <style>
+      *,:after,:before{box-sizing:border-box}:after,:before{text-decoration:inherit;vertical-align:inherit}html{line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-break:break-word}body{margin:0}pre{font-family:monospace,monospace;font-size:1em}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}::-ms-expand{display:none}:-ms-input-placeholder{color:rgba(0,0,0,.54)}@font-face{font-family:Gerbera;src:url(../../build/fonts/Gerbera/Gerbera-Light.woff) format("woff");font-weight:100;font-style:normal}@font-face{font-family:Gerbera;src:url(../../build/fonts/Gerbera/Gerbera-Regular.woff) format("woff");font-weight:300;font-style:normal}@font-face{font-family:Gerbera;src:url(../../build/fonts/Gerbera/Gerbera-Medium.woff) format("woff");font-weight:500;font-style:normal}@font-face{font-family:Gerbera;src:url(../../build/fonts/Gerbera/Gerbera-Bold.woff) format("woff");font-weight:700;font-style:normal}@font-face{font-family:Gerbera;src:url(../../build/fonts/Gerbera/Gerbera-Black.woff) format("woff");font-weight:900;font-style:normal}body{width:100%;background-color:#fff;color:#121313;line-height:19px;font-family:Gerbera,Helvetica,sans-serif;font-size:13px;font-weight:100}@media only screen and (max-width:767px){body{padding-top:100px;font-size:12px}}
+    </style>
+    <link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+    <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <link rel="shortcut icon" href="img/favicons/64x64.png" type="image/png">
+    <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
+    <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
+    <link rel="icon" href="img/favicons/512x512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="img/favicons/152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/favicons/256x256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
+    <link rel="manifest" href="manifest.json">
+    <script defer src="js/libs.min.js"></script>
+    <script defer src="js/common.min.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header container">
+        <div class="wrapper">
+          <div class="header__info">
+            <div class="header__logo"><svg width="178" height="26" viewBox="0 0 178 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M66.3475 13.8723V3.47692L63.7011 2.84549L63.1113 0.0121399L51.7839 0V26H55.0201V14.8336L57.3593 17.337H63.1113L63.7011 14.5037L66.3475 13.8723ZM55.0201 13.8723V3.47692H61.9318L63.1113 4.7408V12.6094L61.9318 13.8723H55.0201Z" fill="#121313"/>
+<path d="M32.3634 15.6052H16.1819V19.07H32.3634V15.6052Z" fill="#121313"/>
+<path d="M150.492 0.0126953H147.255V17.3376H150.492V0.0126953Z" fill="#121313"/>
+<path d="M154.113 9.08954V7.30351L160.922 0.0126953H156.793L151.214 5.986L152.445 8.19599L151.214 10.406L157.688 17.3376H161.818L154.113 9.08954Z" fill="#121313"/>
+<path d="M82.527 0.0126953V8.67565H79.2277L74.4369 14.396V0.0126953H71.2012V17.3376H76.1012L82.527 9.66533V17.3376H85.7641V0.0126953H82.527Z" fill="#121313"/>
+<path d="M0 0.0126953H16.1815V3.47748H9.7093V17.3376H6.47225V5.98195L8.81142 3.47748H0V0.0126953Z" fill="#121313"/>
+<path d="M32.3645 0.0126953H48.546V3.47748H42.0728V17.3376H38.8367V5.98195L41.175 3.47748H32.3645V0.0126953Z" fill="#121313"/>
+<path d="M108.418 0.0126953H124.6V3.47748H118.127V17.3376H114.89V5.98195L117.229 3.47748H108.418V0.0126953Z" fill="#121313"/>
+<path d="M139.164 0.0126953V8.67565H135.864L131.072 14.396V0.0126953H127.836V17.3376H132.738L139.164 9.66533V17.3376H142.4V0.0126953H139.164Z" fill="#121313"/>
+<path d="M93.8543 0.0126953L93.2644 2.84605L90.6179 3.47748V13.8728L93.2644 14.5043L93.8543 17.3376H105.181V13.8728H95.0348L93.8543 12.61V4.74135L95.0348 3.47748H101.946V6.94324H105.181V0.0126953H93.8543Z" fill="#121313"/>
+<path d="M166.673 0.0126953L166.083 2.84605L163.437 3.47748V13.8728L166.083 14.5043L166.673 17.3376H172.425L174.764 14.8342V17.3376H178V0.0126953H166.673ZM174.764 13.8758H167.855L166.675 12.613V4.74135L167.855 3.47748H174.766L174.764 13.8758Z" fill="#121313"/>
+</svg>
+
+            </div>
+            <p class="header__desc">Обучение персонала.<br>Полный комплекс услуг в области Охраны Труда.</p>
+            <div class="header__phones">
+              <div class="header__tel">8 800 555 35 59<br>звонок по России бесплатный</div>
+              <div class="header__tel">8 495 098 04 74<br>Москва</div>
+            </div>
+          </div>
+          <nav class="header__nav"><a class="header__nav-item" href="program.html">Обучение персонала</a><a class="header__nav-item" href="#">Промышленная безопасность</a><a class="header__nav-item" href="#">Специальная оценка условий труда</a><a class="header__nav-item" href="#">Аутсорсинг<br>охраны труда</a><a class="header__nav-item" href="#">Профессиональные стандарты</a><a class="header__nav-item" href="#">Экология</a></nav>
+        </div>
+      </header>
+      <header class="header-mobile container">
+        <div class="wrapper">
+          <div class="header-mobile__top">
+            <div class="header-mobile__logo"><svg width="178" height="26" viewBox="0 0 178 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M66.3475 13.8723V3.47692L63.7011 2.84549L63.1113 0.0121399L51.7839 0V26H55.0201V14.8336L57.3593 17.337H63.1113L63.7011 14.5037L66.3475 13.8723ZM55.0201 13.8723V3.47692H61.9318L63.1113 4.7408V12.6094L61.9318 13.8723H55.0201Z" fill="#121313"/>
+<path d="M32.3634 15.6052H16.1819V19.07H32.3634V15.6052Z" fill="#121313"/>
+<path d="M150.492 0.0126953H147.255V17.3376H150.492V0.0126953Z" fill="#121313"/>
+<path d="M154.113 9.08954V7.30351L160.922 0.0126953H156.793L151.214 5.986L152.445 8.19599L151.214 10.406L157.688 17.3376H161.818L154.113 9.08954Z" fill="#121313"/>
+<path d="M82.527 0.0126953V8.67565H79.2277L74.4369 14.396V0.0126953H71.2012V17.3376H76.1012L82.527 9.66533V17.3376H85.7641V0.0126953H82.527Z" fill="#121313"/>
+<path d="M0 0.0126953H16.1815V3.47748H9.7093V17.3376H6.47225V5.98195L8.81142 3.47748H0V0.0126953Z" fill="#121313"/>
+<path d="M32.3645 0.0126953H48.546V3.47748H42.0728V17.3376H38.8367V5.98195L41.175 3.47748H32.3645V0.0126953Z" fill="#121313"/>
+<path d="M108.418 0.0126953H124.6V3.47748H118.127V17.3376H114.89V5.98195L117.229 3.47748H108.418V0.0126953Z" fill="#121313"/>
+<path d="M139.164 0.0126953V8.67565H135.864L131.072 14.396V0.0126953H127.836V17.3376H132.738L139.164 9.66533V17.3376H142.4V0.0126953H139.164Z" fill="#121313"/>
+<path d="M93.8543 0.0126953L93.2644 2.84605L90.6179 3.47748V13.8728L93.2644 14.5043L93.8543 17.3376H105.181V13.8728H95.0348L93.8543 12.61V4.74135L95.0348 3.47748H101.946V6.94324H105.181V0.0126953H93.8543Z" fill="#121313"/>
+<path d="M166.673 0.0126953L166.083 2.84605L163.437 3.47748V13.8728L166.083 14.5043L166.673 17.3376H172.425L174.764 14.8342V17.3376H178V0.0126953H166.673ZM174.764 13.8758H167.855L166.675 12.613V4.74135L167.855 3.47748H174.766L174.764 13.8758Z" fill="#121313"/>
+</svg>
+
+            </div>
+            <div class="header-mobile__actions"><a class="header-mobile__call" href="tel:88005553559"></a>
+              <div class="header-mobile__burger js-open-menu"></div>
+            </div>
+          </div>
+          <p class="header-mobile__desc">Обучение персонала.<br>Полный комплекс услуг в области Охраны Труда.</p>
+        </div>
+      </header>
+      <div class="header-menu js-menu">
+        <div class="header-menu__backdrop">
+          <div class="header-menu__container">
+            <div class="header-menu__wrapper">
+              <div class="header-menu__window">
+                <div class="header-menu__actions"><a class="header-menu__call" href="tel:88005553559"></a>
+                  <div class="header-menu__close js-close-menu"></div>
+                </div>
+                <nav class="header-menu__main"><a class="header-menu__main-item link" href="program.html">Программы обучения</a><a class="header-menu__main-item link" href="about.html">Об институте</a><a class="header-menu__main-item link" href="teachers.html">Преподаватели</a><a class="header-menu__main-item link" href="distance-learning.html">Переход на СДО</a></nav>
+                <nav class="header-menu__sub"><a class="header-menu__sub-item link" href="#">Промышленная Безопасность</a><a class="header-menu__sub-item link" href="#">Специальная Оценка Условий Труда</a><a class="header-menu__sub-item link" href="#">Аутсорсинг Охраны Труда</a><a class="header-menu__sub-item link" href="#">Профессиональные стандарты</a><a class="header-menu__sub-item link" href="#">Экология</a></nav>
+                <div class="header-menu__phone">
+                  <p class="header-menu__tel">8 800 555 35 59</p>
+                  <p class="header-menu__desc">звонок по России бесплатный</p>
+                </div>
+                <div class="header-menu__phone">
+                  <p class="header-menu__tel">8 495 098 04 74</p>
+                  <p class="header-menu__desc">Москва</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="offer container">
+        <div class="offer__wrapper wrapper">
+          <div class="offer__slider slider js-offer-slider">
+            <div class="offer__slide slider__slide">
+              <div class="offer__slide-inner">
+                <h2 class="offer__heading--mobile"><u>Бесплатное</u> обучение граждан пенсионного и предпенсионного возраста.</h2>
+                <div class="offer__main">
+                  <h2 class="offer__heading"><u>Бесплатное</u> обучение граждан пенсионного и предпенсионного возраста.</h2>
+                  <div class="offer__actions">
+                    <button class="button button--line js-open-popup  offer__btn" data-popup="offer">Узнать подробнее</button>
+                    <div class="slider__counter"><span class="slider__counter-num js-offer-current">01</span>
+                      <div class="slider__counter-divider"></div><span class="slider__counter-num js-offer-total"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer__image" style="background-image: url('img/inhtml/offer-image.jpg');"></div>
+              </div>
+            </div>
+            <div class="offer__slide slider__slide">
+              <div class="offer__slide-inner">
+                <h2 class="offer__heading--mobile"><u>Бесплатное</u> обучение граждан пенсионного и предпенсионного возраста.</h2>
+                <div class="offer__main">
+                  <h2 class="offer__heading"><u>Бесплатное</u> обучение граждан пенсионного и предпенсионного возраста.</h2>
+                  <div class="offer__actions">
+                    <button class="button button--line js-open-popup  offer__btn" data-popup="offer">Узнать подробнее</button>
+                    <div class="slider__counter"><span class="slider__counter-num js-offer-current">01</span>
+                      <div class="slider__counter-divider"></div><span class="slider__counter-num js-offer-total"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer__image" style="background-image: url('img/inhtml/offer-image.jpg');"></div>
+              </div>
+            </div>
+            <div class="offer__slide slider__slide">
+              <div class="offer__slide-inner">
+                <h2 class="offer__heading--mobile"><u>Бесплатное</u> обучение граждан пенсионного и предпенсионного возраста.</h2>
+                <div class="offer__main">
+                  <h2 class="offer__heading"><u>Бесплатное</u> обучение граждан пенсионного и предпенсионного возраста.</h2>
+                  <div class="offer__actions">
+                    <button class="button button--line js-open-popup  offer__btn" data-popup="offer">Узнать подробнее</button>
+                    <div class="slider__counter"><span class="slider__counter-num js-offer-current">01</span>
+                      <div class="slider__counter-divider"></div><span class="slider__counter-num js-offer-total"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer__image" style="background-image: url('img/inhtml/offer-image.jpg');"></div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__controls">
+            <div class="slider__counter"><span class="slider__counter-num js-offer-current"></span>
+              <div class="slider__counter-divider"></div><span class="slider__counter-num js-offer-total"></span>
+            </div>
+            <div class="slider__arrows"></div>
+          </div>
+        </div>
+      </section>
+      <section class="documents container documents--main">
+        <div class="wrapper">
+          <div class="documents__block">
+            <div class="documents__slider slider js-documents-slider">
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/1.jpg" alt="Сертификат №1"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/2.jpg" alt="Сертификат №2"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/3.jpg" alt="Сертификат №3"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/4.jpg" alt="Сертификат №4"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/5.jpg" alt="Сертификат №5"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/6.jpg" alt="Сертификат №6"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/7.jpg" alt="Сертификат №7"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/8.jpg" alt="Сертификат №8"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/9.jpg" alt="Сертификат №9"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/10.jpg" alt="Сертификат №10"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/11.jpg" alt="Сертификат №11"></div>
+              </div>
+              <div class="documents__slide slider__slide">
+                <div class="document js-open-popup" data-popup="document"><img class="document__img" src="img/documents/12.jpg" alt="Сертификат №12"></div>
+              </div>
+            </div>
+            <div class="slider__controls">
+              <div class="slider__counter"><span class="slider__counter-num js-documents-current"></span>
+                <div class="slider__counter-divider"></div><span class="slider__counter-num js-documents-total"></span>
+              </div>
+              <div class="slider__arrows"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recommendations container">
+        <div class="wrapper">
+          <h2 class="recommendations__heading">Клиенты и отзывы — нас рекомендуют друзьям</h2>
+          <div class="recommendations__companies"><img class="recommendations__companies-item" src="img/inhtml/companies/khabarovsk-airport.svg" alt data-logo="khabarovsk-airport"><img class="recommendations__companies-item" src="img/inhtml/companies/russian-copper-company.svg" alt data-logo="rcc"><img class="recommendations__companies-item" src="img/inhtml/companies/kamaz.svg" alt data-logo="kamaz"><img class="recommendations__companies-item" src="img/inhtml/companies/sberbank.svg" alt data-logo="sberbank"><img class="recommendations__companies-item" src="img/inhtml/companies/gazprom.svg" alt data-logo="gazprom"><img class="recommendations__companies-item" src="img/inhtml/companies/russdragmet.svg" alt data-logo="russdragmet"></div>
+          <div class="recommendations__slider slider js-recommendations-slider">
+            <div class="recommendations__slide slider__slide">
+              <div class="recommendations__logo"><img class="recommendations__logo-img" src="img/inhtml/companies/rzhd.svg" alt></div>
+              <p class="recommendations__author">Начальник вагонного участка РЖД <br>В.А. Алексеев</p>
+              <p class="recommendations__feedback">Выражаем благодарность за взаимовыгодное сотрудничество и поддержку, оказанную в ходе проведения обучения персонала вагонного участка. Самоотверженный труд и добропорядочность сотрудников Вашей организации позволили добиться превосходных результатов – для наших работников на высоком уровне организовано обучение по требуемым программам. Искренне надеемся на дальнейшее сотрудничество и расширение партнерских отношений в будущем!</p>
+            </div>
+            <div class="recommendations__slide slider__slide">
+              <div class="recommendations__logo"><img class="recommendations__logo-img" src="img/inhtml/companies/lokotech.svg" alt></div>
+              <p class="recommendations__author">Т.П. Шебаршова, директор филиала по управлению персонала ООО «ЛокоТех»</p>
+              <p class="recommendations__feedback">Выражаем благодарность за эффективную организацию образовательного процесса  для работников филиала «Дальневосточный»  ООО «ЛокоТех-Сервис». Профессионально проведенные занятия позволили нашим работникам получить новые знания. В течении курса выполнялись практические и проектные задания с различными целевыми установками,  что способствовало совершенствованию и обновлению профессиональных компетенций.</p>
+            </div>
+            <div class="recommendations__slide slider__slide">
+              <div class="recommendations__logo"><img class="recommendations__logo-img" src="img/inhtml/companies/russian-copper-company.svg" alt></div>
+              <p class="recommendations__author">Генеральный директор ООО Амур Минералс <br>А.В. Лукьянов</p>
+              <p class="recommendations__feedback">ООО Амур Минералс выражает благодарность руководителю и специалистам за качественно предоставленные услуги по обучению работников по программам дополнительного профессионального образования в области охраны труда, промышленной безопасности, специалистов ответственных за обеспечение безопасности дорожного движения, контролеров технического состояния автомототранспортных средств. Желаем Вашей компании стабильности и процветания, реализации всех перспективных планов.</p>
+            </div>
+            <div class="recommendations__slide slider__slide">
+              <div class="recommendations__logo"><img class="recommendations__logo-img" src="img/inhtml/companies/rzhd.svg" alt></div>
+              <p class="recommendations__author">Начальник вагонного участка РЖД <br>В.А. Алексеев</p>
+              <p class="recommendations__feedback">Выражаем благодарность за взаимовыгодное сотрудничество и поддержку, оказанную в ходе проведения обучения персонала вагонного участка. Самоотверженный труд и добропорядочность сотрудников Вашей организации позволили добиться превосходных результатов – для наших работников на высоком уровне организовано обучение по требуемым программам. Искренне надеемся на дальнейшее сотрудничество и расширение партнерских отношений в будущем!</p>
+            </div>
+            <div class="recommendations__slide slider__slide">
+              <div class="recommendations__logo"><img class="recommendations__logo-img" src="img/inhtml/companies/lokotech.svg" alt></div>
+              <p class="recommendations__author">Т.П. Шебаршова, директор филиала по управлению персонала ООО «ЛокоТех»</p>
+              <p class="recommendations__feedback">Выражаем благодарность за эффективную организацию образовательного процесса  для работников филиала «Дальневосточный»  ООО «ЛокоТех-Сервис». Профессионально проведенные занятия позволили нашим работникам получить новые знания. В течении курса выполнялись практические и проектные задания с различными целевыми установками,  что способствовало совершенствованию и обновлению профессиональных компетенций.</p>
+            </div>
+            <div class="recommendations__slide slider__slide">
+              <div class="recommendations__logo"><img class="recommendations__logo-img" src="img/inhtml/companies/russian-copper-company.svg" alt></div>
+              <p class="recommendations__author">Генеральный директор ООО Амур Минералс <br>А.В. Лукьянов</p>
+              <p class="recommendations__feedback">ООО Амур Минералс выражает благодарность руководителю и специалистам за качественно предоставленные услуги по обучению работников по программам дополнительного профессионального образования в области охраны труда, промышленной безопасности, специалистов ответственных за обеспечение безопасности дорожного движения, контролеров технического состояния автомототранспортных средств. Желаем Вашей компании стабильности и процветания, реализации всех перспективных планов.</p>
+            </div>
+            <div class="recommendations__slide slider__slide">
+              <div class="recommendations__logo"><img class="recommendations__logo-img" src="img/inhtml/companies/rzhd.svg" alt></div>
+              <p class="recommendations__author">Начальник вагонного участка РЖД <br>В.А. Алексеев</p>
+              <p class="recommendations__feedback">Выражаем благодарность за взаимовыгодное сотрудничество и поддержку, оказанную в ходе проведения обучения персонала вагонного участка. Самоотверженный труд и добропорядочность сотрудников Вашей организации позволили добиться превосходных результатов – для наших работников на высоком уровне организовано обучение по требуемым программам. Искренне надеемся на дальнейшее сотрудничество и расширение партнерских отношений в будущем!</p>
+            </div>
+            <div class="recommendations__slide slider__slide">
+              <div class="recommendations__logo"><img class="recommendations__logo-img" src="img/inhtml/companies/lokotech.svg" alt></div>
+              <p class="recommendations__author">Т.П. Шебаршова, директор филиала по управлению персонала ООО «ЛокоТех»</p>
+              <p class="recommendations__feedback">Выражаем благодарность за эффективную организацию образовательного процесса  для работников филиала «Дальневосточный»  ООО «ЛокоТех-Сервис». Профессионально проведенные занятия позволили нашим работникам получить новые знания. В течении курса выполнялись практические и проектные задания с различными целевыми установками,  что способствовало совершенствованию и обновлению профессиональных компетенций.</p>
+            </div>
+            <div class="recommendations__slide slider__slide">
+              <div class="recommendations__logo"><img class="recommendations__logo-img" src="img/inhtml/companies/russian-copper-company.svg" alt></div>
+              <p class="recommendations__author">Генеральный директор ООО Амур Минералс <br>А.В. Лукьянов</p>
+              <p class="recommendations__feedback">ООО Амур Минералс выражает благодарность руководителю и специалистам за качественно предоставленные услуги по обучению работников по программам дополнительного профессионального образования в области охраны труда, промышленной безопасности, специалистов ответственных за обеспечение безопасности дорожного движения, контролеров технического состояния автомототранспортных средств. Желаем Вашей компании стабильности и процветания, реализации всех перспективных планов.</p>
+            </div>
+          </div>
+          <div class="slider__controls">
+            <div class="slider__counter"><span class="slider__counter-num js-recommendations-current"></span>
+              <div class="slider__counter-divider"></div><span class="slider__counter-num js-recommendations-total"></span>
+            </div>
+            <div class="slider__arrows"></div>
+          </div>
+        </div>
+      </section>
+      <section class="callback">
+        <div class="callback__container container">
+          <div class="callback__wrapper wrapper">
+            <div class="callback__image"></div>
+            <form class="callform callback__form" action>
+              <p class="callform__heading">Остались вопросы?<br>Бесплатный звонок по России — 8 800 500 35 59.<br>Москва — 8 495 098 04 74</p>
+              <p class="callform__desc">или оставьте номер, и наш менеджер перезвонит вам в течение рабочего дня</p>
+              <div class="callform__actions">
+                <input class="input callform__input callform__input--tel" type="tel" name="tel" required="required" placeholder="номер телефона">
+                <input class="input callform__input callform__input--email" type="email" name="email" required="required" placeholder="email">
+                <button class="button button--fill  callform__btn" tpye="submit">Оставить заявку</button>
+              </div>
+              <p class="callform__policy">Нажимая на кнопку «Перезвонить», я даю согласие на обработку <a href="#" class="callform__policy-link">Персональных данных</a> и соглашаюсь c <a href="#" class="callform__policy-link">Политикой конфиденциальности</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer container">
+        <div class="wrapper">
+          <div class="footer__logo"><svg width="160" height="24" viewBox="0 0 160 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M59.6384 12.3783V3.10248L57.2595 2.53905L56.7294 0.0108325L46.5475 0V23.2H49.4564V13.2361L51.559 15.47H56.7294L57.2595 12.9417L59.6384 12.3783ZM49.4564 12.3783V3.10248H55.6692L56.7294 4.23025V11.2515L55.6692 12.3783H49.4564Z" fill="white"/>
+<path d="M29.0907 13.9246H14.5455V17.0162H29.0907V13.9246Z" fill="white"/>
+<path d="M135.274 0.010498H132.364V15.4697H135.274V0.010498Z" fill="white"/>
+<path d="M138.529 8.10982V6.51614L144.65 0.010498H140.938L135.923 5.34052L137.029 7.31251L135.923 9.28452L141.742 15.4697H145.454L138.529 8.10982Z" fill="white"/>
+<path d="M74.1818 0.010498V7.74051H71.2161L66.9098 12.8448V0.010498H64.0012V15.4697H68.4058L74.1818 8.62361V15.4697H77.0915V0.010498H74.1818Z" fill="white"/>
+<path d="M0 0.0102539H14.5452V3.1019H8.72746V15.4694H5.81776V5.33666L7.92038 3.1019H0V0.0102539Z" fill="white"/>
+<path d="M29.0918 0.010498H43.637V3.10215H37.8184V15.4697H34.9095V5.3369L37.0113 3.10215H29.0918V0.010498Z" fill="white"/>
+<path d="M97.455 0.010498H112V3.10215H106.182V15.4697H103.273V5.3369L105.374 3.10215H97.455V0.010498Z" fill="white"/>
+<path d="M125.091 0.010498V7.74051H122.125L117.818 12.8448V0.010498H114.909V15.4697H119.315L125.091 8.62361V15.4697H128V0.010498H125.091Z" fill="white"/>
+<path d="M84.3635 0.010498L83.8332 2.53872L81.4543 3.10215V12.378L83.8332 12.9414L84.3635 15.4697H94.5452V12.378H85.4246L84.3635 11.2511V4.22991L85.4246 3.10215H91.6366V6.19467H94.5452V0.010498H84.3635Z" fill="white"/>
+<path d="M149.818 0.010498L149.288 2.53872L146.909 3.10215V12.378L149.288 12.9414L149.818 15.4697H154.989L157.091 13.2358V15.4697H160V0.010498H149.818ZM157.091 12.3807H150.881L149.821 11.2538V4.22991L150.881 3.10215H157.093L157.091 12.3807Z" fill="white"/>
+</svg>
+
+          </div>
+          <div class="footer__grid">
+            <div class="footer__col"><a class="link" href="#">Об институте</a></div>
+            <div class="footer__col">
+              <p class="footer__office">офис в Москве</p>
+              <p class="footer__address">129626, Москва, пер. Кулаков 9А, стр 1, <br>офис 118 </p>
+              <p class="footer__tel">8 (495) 098-04-74</p><a class="link" href="mailto:msk@ttristika.ru">msk@ttristika.ru</a>
+            </div>
+            <div class="footer__col">
+              <p class="footer__office">офис в Хабаровске</p>
+              <p class="footer__address">680021, Хабаровск, ул. Ленинградская 53 к1, <br>офис 313 </p>
+              <p class="footer__tel">8 (800) 555-35-59</p><a class="link" href="mailto:sales@ttristika.ru">sales@ttristika.ru</a>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <div class="footer__copyright-block">
+              <p class="footer__copy">&copy;2019, Т_Тристика.</p><a class="footer__policy" href="#">Политика конфиденциальности</a>
+            </div>
+            <p class="footer__design">Дизайн - студия Арбуз</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="popup js-popup" data-popup="document">
+      <div class="popup__backdrop"></div>
+      <div class="popup__container">
+        <div class="popup__wrapper">
+          <div class="popup__window">
+            <div class="popup__close js-close-popup"></div>
+            <div class="popup__content--document"><img class="popup__document js-popup-document" src alt></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" data-popup="offer">
+      <div class="popup__backdrop"></div>
+      <div class="popup__container">
+        <div class="popup__wrapper">
+          <div class="popup__window">
+            <div class="popup__close js-close-popup"></div>
+            <div class="popup__content--offer">
+              <div class="popup__offer-main">
+                <h2 class="popup__offer-heading">Бесплатное обучение граждан пенсионного и предпенсионного возраста.</h2><img class="popup__offer-img" src="img/inhtml/offer-image.jpg" alt>
+                <p class="popup__offer-desc">Для работников автотранспортных организаций (АТП), автотранспортных цехов, участков иных организаций, предоставляющих услуги по техническому обслуживанию, ремонту и проверке технического состояния автотранспортных средств, а также на предпринимателей, осуществляющих перевозки грузов и пассажиров.</p>
+              </div>
+              <form class="callform popup__offer-callform" action>
+                <p class="callform__heading">Остались вопросы?<br>Бесплатный звонок по России — 8 800 500 35 59.<br>Москва — 8 495 098 04 74</p>
+                <p class="callform__desc">или оставьте номер, и наш менеджер перезвонит вам в течение рабочего дня</p>
+                <div class="callform__actions">
+                  <input class="input callform__input callform__input--tel" type="tel" name="tel" required="required" placeholder="номер телефона">
+                  <input class="input callform__input callform__input--email" type="email" name="email" required="required" placeholder="email">
+                  <button class="button button--fill  callform__btn" tpye="submit">Оставить заявку</button>
+                </div>
+                <p class="callform__policy">Нажимая на кнопку «Перезвонить», я даю согласие на обработку <a href="#" class="callform__policy-link">Персональных данных</a> и соглашаюсь c <a href="#" class="callform__policy-link">Политикой конфиденциальности</a></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

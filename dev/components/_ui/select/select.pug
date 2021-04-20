@@ -1,0 +1,6 @@
+mixin select(name, placeholder, className, required, options)
+  .select(class=className)
+    select.js-select(name=name, placeholder=placeholder, required=required)
+      option
+      each option in options
+        option(value=option.value)= option.label

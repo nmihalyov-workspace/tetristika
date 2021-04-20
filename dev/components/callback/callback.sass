@@ -1,0 +1,39 @@
+.callback
+  padding-top: 20px
+  overflow: hidden
+  &__container
+    background-color: $blue-light
+  &__wrapper
+    position: relative
+    padding-top: 100px !important
+    padding-bottom: 95px !important
+  &__image
+    position: absolute
+    top: -20px
+    left: 30px
+    width: 310px
+    height: 634px
+    background:
+      image: url('../img/phone.png')
+      position: center
+      size: contain
+      repeat: no-repeat
+  &__form
+    margin-left: 400px
+
+@media only screen and (max-width: $tablet)
+  .callback
+    padding-top: 0
+    &__wrapper
+      padding-top: 50px !important
+      padding-bottom: 50px !important
+    &__image
+      display: none
+    &__form
+      margin: 0
+
+@media only screen and (max-width: $mobile)
+  .callback
+    &__wrapper
+      padding-top: 30px !important
+      padding-bottom: 35px !important

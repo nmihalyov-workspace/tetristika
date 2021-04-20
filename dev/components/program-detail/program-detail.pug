@@ -1,0 +1,171 @@
+include ../_ui/form-card/form-card
+include ../_ui/section-heading/section-heading
+include ../_ui/document/document
+
+mixin program-detail
+  section.program-detail.container
+    .wrapper
+      .module
+        main.module__main
+          .program-detail__main
+            h1.program-detail__heading Охрана труда для руководителей и специалистов
+            p.program-detail__desc Минимальное количество обучаемых в специализированных учебных центрах человек – 3: руководитель + 2 сотрудника, из которых будет сформирована комиссия по обучению и проверке знаний остальных необученных работников.
+            p.program-detail__subheading для кого
+            p.program-detail__desc Руководителям организаций и подразделений; сотрудникам, ответственным за охрану труда; членам комиссии по охране труда; работникам рабочих профессий.
+            p.program-detail__subheading нормативная база
+            p.program-detail__desc Постановление Минтруда РФ и Минобразования РФ от 13 января 2003 г. № 1/29 «Об утверждении Порядка обучения по охране труда и проверки знаний требований охраны труда работников организаций».
+            p.program-detail__subheading доступные формы обучения
+            .program-detail__forms
+              +form-card('очно', 'Организуем очное обучение в любом городе России.')
+              +form-card('заочно', 'С применением дистанционных образовательных технологий.')
+          .program-detail__plan
+            .program-detail__plan-head
+              +section-heading('Учебный план')
+              +button-line('simple', 'Показать учебный план', '', 'program-detail__plan-btn js-toggle-plan', '', true)
+              .program-detail__plan-preview--mobile.js-plan-preview-mobile
+                p.program-detail__plan-preview-item 5 разделов / 27 тем
+            +button-line('simple', 'Показать учебный план', '', 'program-detail__plan-btn program-detail__plan-btn--mobile js-toggle-plan', '', true)
+            .program-detail__plan-preview.js-plan-preview
+              p.program-detail__plan-preview-item 5 разделов / 27 тем
+              p.program-detail__plan-preview-item 40 часов
+            .program-detail__plan-content.js-plan-content
+              .program-detail__table
+                .program-detail__table-head
+                  p.program-detail__table-num №
+                  p.program-detail__table-name наименование разделов и тем
+                  p.program-detail__table-hours часы
+                .program-detail__table-item
+                  .program-detail__table-heading
+                    p.program-detail__table-num 1.
+                    p.program-detail__table-name Основы охраны труда
+                    p.program-detail__table-hours 8
+                  .program-detail__table-row
+                    p.program-detail__table-num 1.1
+                    p.program-detail__table-name Основные понятия, термины и определения в сфере безопасности и охраны труда
+                    p.program-detail__table-hours 1
+                  .program-detail__table-row
+                    p.program-detail__table-num 1.2
+                    p.program-detail__table-name Правовые основы охраны труда
+                    p.program-detail__table-hours 1
+                  .program-detail__table-row
+                    p.program-detail__table-num 1.3
+                    p.program-detail__table-name Государственное регулирование в сфере охраны труда
+                    p.program-detail__table-hours 2
+                  .program-detail__table-row
+                    p.program-detail__table-num 1.4
+                    p.program-detail__table-name Основные положения трудового права
+                    p.program-detail__table-hours 2
+                  .program-detail__table-row
+                    p.program-detail__table-num 1.5
+                    p.program-detail__table-name Обязанности и ответственность работников по соблюдению требований охраны труда и трудового распорядка
+                    p.program-detail__table-hours 1
+                  .program-detail__table-row
+                    p.program-detail__table-num 1.6
+                    p.program-detail__table-name Ответственность, предусмотренная за нарушение требований трудового права, охраны труда и промышленной безопасности
+                    p.program-detail__table-hours 1
+                .program-detail__table-item
+                  .program-detail__table-heading
+                    p.program-detail__table-num 2.
+                    p.program-detail__table-name Основы управления охраной труда в организациях
+                    p.program-detail__table-hours 10
+                  .program-detail__table-row
+                    p.program-detail__table-num 2.1
+                    p.program-detail__table-name Управление охраной труда в организациях
+                    p.program-detail__table-hours 1,5
+                  .program-detail__table-row
+                    p.program-detail__table-num 2.2
+                    p.program-detail__table-name Обязанности работодателя по обеспечению безопасных условий и охраны труда
+                    p.program-detail__table-hours 0,5
+                  .program-detail__table-row
+                    p.program-detail__table-num 2.3
+                    p.program-detail__table-name Социальное партнерство работодателя и работников в сфере охраны труда
+                    p.program-detail__table-hours 1,5
+                  .program-detail__table-row
+                    p.program-detail__table-num 2.4
+                    p.program-detail__table-name Специальная оценка условий труда
+                    p.program-detail__table-hours 1
+                  .program-detail__table-row
+                    p.program-detail__table-num 2.5
+                    p.program-detail__table-name Разработка должностных инструкций и инструкций по охране труда
+                    p.program-detail__table-hours 1
+                  .program-detail__table-row
+                    p.program-detail__table-num 2.6
+                    p.program-detail__table-name Организация обучения и проверки знаний требований охраны труда работников организаций
+                    p.program-detail__table-hours 1
+                  .program-detail__table-row
+                    p.program-detail__table-num 2.7
+                    p.program-detail__table-name Предоставление компенсаций за условия труда. Обеспечение работников средствами индивидуальной защиты
+                    p.program-detail__table-hours 1
+                  .program-detail__table-row
+                    p.program-detail__table-num 2.8
+                    p.program-detail__table-name Основы предупреждения профессиональной заболеваемости
+                    p.program-detail__table-hours 1,5
+                  .program-detail__table-row
+                    p.program-detail__table-num 2.9
+                    p.program-detail__table-name Документация и отчетность по охране труда
+                    p.program-detail__table-hours 1
+                .program-detail__table-item
+                  .program-detail__table-heading
+                    p.program-detail__table-num 3.
+                    p.program-detail__table-name Специальные вопросы обеспечения требований охраны труда и безопасности производственной деятельности
+                    p.program-detail__table-hours 10
+                  .program-detail__table-row
+                    p.program-detail__table-num 3.1
+                    p.program-detail__table-name Основы предупреждения производственного травматизма
+                    p.program-detail__table-hours 1
+                  .program-detail__table-row
+                    p.program-detail__table-num 3.2
+                    p.program-detail__table-name Техническое обеспечение безопасности зданий и сооружений, оборудования и инструмента, технологических процессов
+                    p.program-detail__table-hours 2
+                  .program-detail__table-row
+                    p.program-detail__table-num 3.3
+                    p.program-detail__table-name Идентификация опасностей и управление рисками
+                    p.program-detail__table-hours 2
+                  .program-detail__table-row
+                    p.program-detail__table-num 3.4
+                    p.program-detail__table-name Организация выполнения работ с повышенной опасностью
+                    p.program-detail__table-hours 1
+                  .program-detail__table-row
+                    p.program-detail__table-num 3.5
+                    p.program-detail__table-name Обеспечение электробезопасности
+                    p.program-detail__table-hours 2
+                  .program-detail__table-row
+                    p.program-detail__table-num 3.6
+                    p.program-detail__table-name Обеспечение пожарной безопасности
+                    p.program-detail__table-hours 2
+                  .program-detail__table-row
+                    p.program-detail__table-num 3.7
+                    p.program-detail__table-name Обеспечение безопасности работников в аварийных ситуациях
+                    p.program-detail__table-hours 1
+          .program-detail__warning
+            p.program-detail__warning-tag осторожно
+            p.program-detail__warning-desc ст. 5.27.1 КоАП РФ Допуск работника к исполнению им трудовых обязанностей без прохождения в установленном порядке обучения и проверки знаний требований охраны труда влечет наложение административного штрафа:
+            ul.program-detail__warning-list
+              li.program-detail__warning-list-item
+                span 15 000 - 25 000 руб. для должностных лиц и ИП;
+              li.program-detail__warning-list-item
+                span 110 000 – 130 000 руб. для организаций.
+            p.program-detail__warning-sub при повторном нарушении
+            ul.program-detail__warning-list
+              li.program-detail__warning-list-item
+                span 30 000 – 40 000 руб. для должностных лиц и ИП или дисквалификация на 1-3 года
+              li.program-detail__warning-list-item
+                span 100 000 – 200 000 руб. для организаций или приостановление работы до 90 суток
+            +button-line('popup', 'Заказать консультацию', '', 'program-detail__warning-btn', 'call', true)
+          +section-heading('Выдаваемый документ', 'Удостоверение о проверке знаний требований охраны труда')
+          +document(13, 'Удостоверение')
+        aside.module__aside.module__aside--sticky.module__aside--hide
+          .program-detail__aside
+            .program-detail__aside-card
+              .program-detail__aside-info
+                .program-detail__aside-item
+                  p.program-detail__aside-name стоимость
+                  p.program-detail__aside-value 1300 &#8381;
+                .program-detail__aside-item
+                  p.program-detail__aside-name длительность
+                  p.program-detail__aside-value 40 часов
+              +button-fill('popup', 'Оставить заявку', '', 'program-detail__aside-btn', 'request', true)
+            .program-detail__aside-content
+              p.program-detail__aside-heading Поможем с планом обучения
+              p.program-detail__aside-desc Оставьте номер, и наш менеджер перезвонит вам в течение рабочего дня
+              +button-line('popup', 'Заказать звонок', '', '', 'call', true)

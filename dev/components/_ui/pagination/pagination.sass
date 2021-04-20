@@ -1,0 +1,88 @@
+.pagination
+  margin-bottom: 80px
+  &__wrapper
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+  &__pages
+    margin-right: 20px
+    line-height: 22px
+  &__controls
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+    &-item,
+    &-last
+      display: flex
+      flex-flow: row nowrap
+      justify-content: center
+      align-items: center
+      height: 44px
+      border-radius: 44px
+      border: 1px solid $blue
+      color: $blue
+      text-decoration: none
+      transition: all .3s ease
+      &:hover
+        background-color: $blue
+        color: #fff
+    &-item
+      width: 44px
+      &:not(:last-child)
+        margin-right: 10px
+      &:nth-child(5):not(.pagination__controls-last),
+      &:nth-child(6):not(.pagination__controls-last)
+        display: none
+      &--current
+        pointer-events: none
+        background-color: $blue
+        color: #fff
+    &-last
+      width: 120px
+  &__total
+    margin-left: 20px
+    line-height: 22px
+
+@media only screen and (max-width: $tablet)
+  .pagination
+    margin-bottom: 50px
+    &__pages
+      margin-right: 15px
+      line-height: 15px
+      font-size: 13px
+    &__controls
+      &-item
+        padding-top: 2px
+        width: 40px
+        height: 40px
+      &-last
+        height: 40px
+    &__total
+      margin-left: 15px
+      line-height: 13px
+      font-size: 12px
+
+@media only screen and (max-width: $tablet)
+  .pagination
+    &__wrapper
+      flex-flow: column nowrap
+      justify-content: flex-start
+      align-items: flex-start
+    &__pages
+      margin-bottom: 10px
+    &__controls
+      width: calc(100% + 8px)
+      margin-bottom: 10px
+      flex-wrap: wrap
+      &-item
+        &:not(:last-child)
+          margin-right: 8px
+        &:nth-child(5):not(.pagination__controls-last),
+        &:nth-child(6):not(.pagination__controls-last)
+          display: flex
+      &-last
+        margin-top: 10px
+    &__total
+      margin-left: 0

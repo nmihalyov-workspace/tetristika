@@ -1,0 +1,70 @@
+.teachers
+  &-main
+    margin-bottom: 55px
+    &__heading
+      margin-bottom: 15px
+      line-height: 36px
+      font:
+        size: 30px
+        weight: 100
+    &__desc
+      margin-bottom: 50px
+      line-height: 20px
+    &__forms
+      display: flex
+      flex-flow: row wrap
+      justify-content: space-between
+      align-items: stretch
+    &__aside
+      margin-bottom: 10px
+      line-height: 25px
+      font-size: 20px
+  &-licenses
+    margin-bottom: 50px
+  &-docs
+    margin-bottom: 100px
+  &-staff
+    margin-bottom: 25px
+    &__heading
+      width: 675px
+    &__block
+      display: flex
+      flex-flow: row wrap
+      justify-content: flex-start
+      align-items: stretch
+      width: calc(100% + 20px)
+      margin-left: -10px
+      margin-bottom: 55px
+  &-partner
+    display: none
+
+@media only screen and (max-width: $mobile)
+  .teachers
+    &-main
+      margin-bottom: 15px
+      &__heading
+        line-height: 24px
+        font-size: 19px
+      &__desc
+        margin-bottom: 30px
+        line-height: 16px
+        font-size: 12px
+    &-licenses
+      margin-bottom: 25px
+    &-docs
+      margin-bottom: 25px
+    &-staff
+      margin-bottom: 0
+      &__heading
+        width: 100%
+      &__block
+        margin-bottom: 15px
+        margin-left: 0
+        width: 100%
+    &-partner
+      display: block
+      margin-bottom: 30px
+      &__head
+        margin-bottom: 10px
+        line-height: 19px
+        font-size: 15px

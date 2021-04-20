@@ -1,0 +1,25 @@
+include ../_ui/button/button
+
+mixin offer
+  section.offer.container
+    .offer__wrapper.wrapper
+      .offer__slider.slider.js-offer-slider
+        - for (var i = 3; i--;)
+          .offer__slide.slider__slide
+            .offer__slide-inner
+              h2.offer__heading--mobile <u>Бесплатное</u> обучение граждан пенсионного и предпенсионного возраста.
+              .offer__main
+                h2.offer__heading <u>Бесплатное</u> обучение граждан пенсионного и предпенсионного возраста.
+                .offer__actions
+                  +button-line('popup', 'Узнать подробнее', '', 'offer__btn', 'offer')
+                  .slider__counter
+                    span.slider__counter-num.js-offer-current 01
+                    .slider__counter-divider
+                    span.slider__counter-num.js-offer-total
+              .offer__image(style="background-image: url('img/inhtml/offer-image.jpg');")
+      .slider__controls
+        .slider__counter
+          span.slider__counter-num.js-offer-current
+          .slider__counter-divider
+          span.slider__counter-num.js-offer-total
+        .slider__arrows

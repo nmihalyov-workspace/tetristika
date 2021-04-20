@@ -1,0 +1,15 @@
+include ../button/button
+
+mixin program-card(type, heading, description, hasDetailPage, price)
+  .program-card
+    h6.program-card__type= type
+    h5.program-card__heading.js-open-popup(data-popup="request")= heading
+    p.program-card__desc= description
+    p.program-card__price-mobile= price
+      | &#8381;
+    .program-card__actions
+      +button-line('popup', 'Оставить заявку', '', 'program-card__btn', 'request', true)
+      if hasDetailPage
+        a.program-card__link.link(href="program-detail.html") Подробнее
+      p.program-card__price= price
+        | &#8381;

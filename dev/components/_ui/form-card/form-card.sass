@@ -1,0 +1,33 @@
+.form-card
+  width: 377px
+  margin-bottom: 20px
+  padding: 20px 25px 15px 20px
+  border-radius: 5px
+  background-color: $blue-light
+  &-tag
+    display: inline-block
+    height: 28px
+    margin-bottom: 25px
+    padding: 0 10px
+    background-color: $blue
+    color: #fff
+    text-align: center
+    line-height: 27px
+
+@media only screen and (max-width: $tablet)
+  .form-card
+    width: 354px
+    padding-right: 15px
+
+@media only screen and (max-width: $mobile)
+  .form-card
+    width: 100%
+    margin: 0 0 20px 0
+    &-tag
+      height: 26px
+      margin-bottom: 10px
+      line-height: 25px
+      font-size: 11px
+    &-desc
+      line-height: 16px
+      font-size: 12px

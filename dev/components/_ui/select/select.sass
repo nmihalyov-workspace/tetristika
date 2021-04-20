@@ -1,0 +1,81 @@
+.select
+  z-index: 3
+  position: relative
+  .select2
+    width: 100% !important
+    &-container
+      &--open
+        .select2
+          &-selection
+            &__arrow
+              transform: rotate(180deg)
+    &-selection
+      height: 44px !important
+      padding: 9px 30px 10px 25px
+      border-radius: 44px !important
+      border: 1px solid $blue !important
+      outline: 0
+      transition: border-color .3s ease
+      line-height: 25px
+      font-size: 16px
+      &__arrow
+        top: 16px !important
+        right: 20px !important
+        width: 12px !important
+        height: 12px !important
+        transition: transform .3s ease
+        background:
+          image: url('data:image/svg+xml,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0.414435%205.65685L6.07129%2011.3137L11.7281%205.65685%22%20stroke%3D%22%2353AFCB%22%2F%3E%0A%3C%2Fsvg%3E')
+          position: center -2px
+          repeat: no-repeat
+        b
+          display: none
+      &__rendered
+        padding: 0 !important
+        color: $blue !important
+      &__placeholder
+        color: $blue !important
+  &:hover
+    .select2
+      &-container:not(.select2-container--open)
+        .select2-selection
+          border-color: transparentize($blue, 0.5) !important
+
+.select2-dropdown
+  z-index: 2
+  border: none !important
+  padding-top: 40px
+  padding-bottom: 20px
+  background-color: $blue-light
+  border-bottom-right-radius: 22px
+  border-bottom-left-radius: 22px
+  transform: translateY(-20px)
+  .select2-results__option
+    padding: 6px 10px 4px 25px
+    background-color: transparent !important
+    color: $blue
+    line-height: 25px
+    font-size: 16px
+    &--highlighted
+      background-color: #E1F1F6 !important
+      color: $blue !important
+
+@media only screen and (max-width: $tablet)
+  .select
+    .select2
+      &-selection
+        height: 40px !important
+        padding: 10px 32px 10px 20px !important
+        font-size: 12px
+        &__rendered
+          line-height: 21px !important
+        &__arrow
+          top: 14px !important
+
+  .select2-dropdown
+    padding-top: 30px
+    padding-bottom: 10px
+    .select2-results__option
+      padding-left: 20px
+      line-height: 15px
+      font-size: 12px

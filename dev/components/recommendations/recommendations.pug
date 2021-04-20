@@ -1,0 +1,34 @@
+mixin recommendations
+  section.recommendations.container
+    .wrapper
+      h2.recommendations__heading Клиенты и отзывы — нас рекомендуют друзьям
+      .recommendations__companies
+        img.recommendations__companies-item(src="img/inhtml/companies/khabarovsk-airport.svg", alt="", data-logo="khabarovsk-airport")
+        img.recommendations__companies-item(src="img/inhtml/companies/russian-copper-company.svg", alt="", data-logo="rcc")
+        img.recommendations__companies-item(src="img/inhtml/companies/kamaz.svg", alt="", data-logo="kamaz")
+        img.recommendations__companies-item(src="img/inhtml/companies/sberbank.svg", alt="",  data-logo="sberbank")
+        img.recommendations__companies-item(src="img/inhtml/companies/gazprom.svg", alt="", data-logo="gazprom")
+        img.recommendations__companies-item(src="img/inhtml/companies/russdragmet.svg", alt="", data-logo="russdragmet")
+      .recommendations__slider.slider.js-recommendations-slider
+        - for (var i = 3; i--;)
+          .recommendations__slide.slider__slide
+            .recommendations__logo
+              img.recommendations__logo-img(src="img/inhtml/companies/rzhd.svg", alt="")
+            p.recommendations__author Начальник вагонного участка РЖД <br>В.А. Алексеев
+            p.recommendations__feedback Выражаем благодарность за взаимовыгодное сотрудничество и поддержку, оказанную в ходе проведения обучения персонала вагонного участка. Самоотверженный труд и добропорядочность сотрудников Вашей организации позволили добиться превосходных результатов – для наших работников на высоком уровне организовано обучение по требуемым программам. Искренне надеемся на дальнейшее сотрудничество и расширение партнерских отношений в будущем!
+          .recommendations__slide.slider__slide
+            .recommendations__logo
+              img.recommendations__logo-img(src="img/inhtml/companies/lokotech.svg", alt="")
+            p.recommendations__author Т.П. Шебаршова, директор филиала по управлению персонала ООО «ЛокоТех»
+            p.recommendations__feedback Выражаем благодарность за эффективную организацию образовательного процесса  для работников филиала «Дальневосточный»  ООО «ЛокоТех-Сервис». Профессионально проведенные занятия позволили нашим работникам получить новые знания. В течении курса выполнялись практические и проектные задания с различными целевыми установками,  что способствовало совершенствованию и обновлению профессиональных компетенций.
+          .recommendations__slide.slider__slide
+            .recommendations__logo
+              img.recommendations__logo-img(src="img/inhtml/companies/russian-copper-company.svg", alt="")
+            p.recommendations__author Генеральный директор ООО Амур Минералс <br>А.В. Лукьянов
+            p.recommendations__feedback ООО Амур Минералс выражает благодарность руководителю и специалистам за качественно предоставленные услуги по обучению работников по программам дополнительного профессионального образования в области охраны труда, промышленной безопасности, специалистов ответственных за обеспечение безопасности дорожного движения, контролеров технического состояния автомототранспортных средств. Желаем Вашей компании стабильности и процветания, реализации всех перспективных планов.
+      .slider__controls
+        .slider__counter
+          span.slider__counter-num.js-recommendations-current
+          .slider__counter-divider
+          span.slider__counter-num.js-recommendations-total
+        .slider__arrows

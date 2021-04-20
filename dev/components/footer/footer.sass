@@ -1,0 +1,101 @@
+.footer
+  padding-top: 80px
+  background-color: $black
+  &__logo
+    margin-bottom: 25px
+  &__grid
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: flex-start
+    padding-bottom: 75px
+    color: #fff
+    line-height: 20px
+    font-size: 15px
+  &__col
+    width: 33.333333%
+  &__office
+    opacity: 0.5
+    margin-bottom: 15px
+  &__address
+    margin-bottom: 15px
+    text-decoration: underline
+  &__tel
+    margin-bottom: 5px
+  &__copyright
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+    padding: 25px 0
+    border-top: 1px solid rgba(255, 255, 255, 0.1)
+    color: #fff
+    line-height: 15px
+    font-size: 10px
+    &-block
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: center
+  &__copy
+    width: 150px
+    margin-right: 10px
+  &__policy
+    color: #fff
+    text-decoration: none
+    transition: opacity .3s ease
+    &:hover
+      opacity: 0.8
+  &__design
+    margin-left: auto
+
+@media only screen and (max-width: $tablet)
+  .footer
+    padding-top: 50px
+    &__grid
+      padding-bottom: 55px
+    &__col
+      width: 40%
+      font-size: 13px
+      &:first-child
+        width: 20%
+    &__office
+    &__address,
+      margin-bottom: 10px
+    &__copyright
+      padding: 15px 0
+
+@media only screen and (max-width: $mobile)
+  .footer
+    padding-top: 40px
+    &__logo
+      width: 100px
+      svg
+        width: 100%
+    &__grid
+      flex-flow: column nowrap
+      justify-content: flex-start
+      align-items: flex-start
+      padding-bottom: 10px
+    &__col
+      width: 100%
+      margin-bottom: 25px
+      font-size: 12px
+      &:first-child
+        display: none
+    &__office
+      margin-bottom: 8px
+    &__address
+      br
+        display: none
+    &__copyright
+      align-items: flex-end
+      font-size: 9px
+      &-block
+        flex-flow: column nowrap
+        align-items: flex-start
+    &__policy
+      margin-top: 5px
+      margin-left: 0
+    &__design
+      opacity: 0.5

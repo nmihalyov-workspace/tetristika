@@ -1,0 +1,21 @@
+include ../_ui/document/document
+
+mixin documents(className, alt)
+  section.documents.container(class=className)
+    .wrapper
+      .documents__block
+        .documents__slider.slider.js-documents-slider
+          if alt
+            - for (var i = 9; i > 0; i--)
+              .documents__slide.slider__slide
+                +document(i, `Сертификат №${i}`)
+          else
+            - for (var i = 1; i < 13; i++)
+              .documents__slide.slider__slide
+                +document(i, `Сертификат №${i}`)
+        .slider__controls
+          .slider__counter
+            span.slider__counter-num.js-documents-current
+            .slider__counter-divider
+            span.slider__counter-num.js-documents-total
+          .slider__arrows

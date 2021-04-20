@@ -1,0 +1,61 @@
+.program
+  &__grid
+    display: flex
+    flex-flow: row wrap
+    justify-content: flex-start
+    align-items: stretch
+    margin-bottom: 20px
+    margin-left: -10px
+    width: calc(100% + 20px)
+  &__filters
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 40px
+    &-select
+      width: 435px
+    &-input
+      width: 380px
+      border-bottom: 1px solid transparentize($blue, 0.7)
+      color: $blue
+      &:hover,
+      &:focus,
+      &.input--filled
+        border-bottom-color: $blue
+
+@media only screen and (max-width: $tablet)
+  .program
+    &__filters
+      &-head
+        width: 85px
+        font-size: 15px
+      &-select
+        width: 260px
+      &-input
+        width: 230px
+      &-btn
+        width: 100px
+        height: 40px
+
+@media only screen and (max-width: $mobile)
+  .program
+    &__filters
+      flex-flow: column nowrap
+      justify-content: flex-start
+      &-head
+        width: 100%
+        margin: 0 0 5px 0
+        line-height: 27px
+      &-select
+        width: 100%
+        margin-bottom: 20px
+      &-input
+        width: 100%
+        margin-bottom: 15px
+        line-height: 25px
+        font-size: 15px
+      &-btn
+        width: 100%
+    &__grid
+      margin-bottom: 10px

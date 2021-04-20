@@ -1,0 +1,25 @@
+include ../components/header/header
+include ../components/offer/offer
+include ../components/documents/documents
+include ../components/recommendations/recommendations
+include ../components/callback/callback
+include ../components/footer/footer
+include ../components/_ui/popup/popup
+
+doctype
+html(lang="ru", prefix="og: http://ogp.me/ns#")
+  head
+    title т_тристика
+    include assets/_metas
+    include assets/_links
+    include assets/_scripts
+  body
+    .page-wrapper
+      +header
+      +offer
+      +documents('documents--main')
+      +recommendations
+      +callback
+      +footer
+    +popup('document')
+    +popup('offer')

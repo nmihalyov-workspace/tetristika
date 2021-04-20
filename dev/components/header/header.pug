@@ -1,0 +1,57 @@
+mixin header(currentSection, currentPage)
+  header.header.container
+    .wrapper
+      .header__info
+        .header__logo
+          include assets/logo.svg
+        p.header__desc Обучение персонала.<br>Полный комплекс услуг в области Охраны Труда.
+        .header__phones
+          .header__tel 8 800 555 35 59<br>звонок по России бесплатный
+          .header__tel 8 495 098 04 74<br>Москва
+      nav.header__nav
+        a.header__nav-item(href="program.html", class=`${currentSection === 'staff' ?  'header__nav-item--current' : ''}`) Обучение персонала
+        a.header__nav-item(href="#") Промышленная безопасность
+        a.header__nav-item(href="#") Специальная оценка условий труда
+        a.header__nav-item(href="#") Аутсорсинг<br>охраны труда
+        a.header__nav-item(href="#") Профессиональные стандарты
+        a.header__nav-item(href="#") Экология
+      if currentSection === 'staff'
+        nav.header__subnav
+          a.header__subnav-item.link(href="program.html", class=`${currentPage === 'program' ?  'header__subnav-item--current' : ''}`) Программы обучения
+          a.header__subnav-item.link(href="about.html", class=`${currentPage === 'about' ?  'header__subnav-item--current' : ''}`) Об институте
+          a.header__subnav-item.link(href="teachers.html", class=`${currentPage === 'teachers' ?  'header__subnav-item--current' : ''}`) Преподаватели
+          a.header__subnav-item.link(href="distance-learning.html", class=`${currentPage === 'distance-learning' ?  'header__subnav-item--current' : ''}`) Переход на СДО
+  header.header-mobile.container
+    .wrapper
+      .header-mobile__top
+        .header-mobile__logo
+          include assets/logo.svg
+        .header-mobile__actions
+          a.header-mobile__call(href="tel:88005553559")
+          .header-mobile__burger.js-open-menu
+      p.header-mobile__desc Обучение персонала.<br>Полный комплекс услуг в области Охраны Труда.
+  .header-menu.js-menu
+    .header-menu__backdrop
+      .header-menu__container
+        .header-menu__wrapper
+          .header-menu__window
+            .header-menu__actions
+              a.header-menu__call(href="tel:88005553559")
+              .header-menu__close.js-close-menu
+            nav.header-menu__main
+              a.header-menu__main-item.link(href="program.html") Программы обучения
+              a.header-menu__main-item.link(href="about.html") Об институте
+              a.header-menu__main-item.link(href="teachers.html") Преподаватели
+              a.header-menu__main-item.link(href="distance-learning.html") Переход на СДО
+            nav.header-menu__sub
+              a.header-menu__sub-item.link(href="#") Промышленная Безопасность
+              a.header-menu__sub-item.link(href="#") Специальная Оценка Условий Труда
+              a.header-menu__sub-item.link(href="#") Аутсорсинг Охраны Труда
+              a.header-menu__sub-item.link(href="#") Профессиональные стандарты
+              a.header-menu__sub-item.link(href="#") Экология
+            .header-menu__phone
+              p.header-menu__tel 8 800 555 35 59
+              p.header-menu__desc звонок по России бесплатный
+            .header-menu__phone
+              p.header-menu__tel 8 495 098 04 74
+              p.header-menu__desc Москва

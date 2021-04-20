@@ -1,0 +1,224 @@
+.header-mobile,
+.header-menu
+  display: none
+.header
+  margin-bottom: 40px
+  &__info
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+    padding: 25px 0
+  &__logo
+    margin: 5px 20px 0 0
+  &__desc
+    line-height: 20px
+    font-size: 15px
+  &__phones
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+    margin-left: auto
+  &__tel
+    line-height: 20px
+    font-size: 15px
+    &:not(:last-child)
+      margin-right: 40px
+  &__nav
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: stretch
+    border-top: 1px solid $blue
+    border-bottom: 1px solid $blue
+    &-item
+      min-height: 85px
+      width: 16.6666666%
+      padding: 15px 20px 10px 20px
+      color: $blue
+      text-decoration: none
+      text-transform: uppercase
+      letter-spacing: 0.02em
+      transition: opacity .3s ease
+      font-weight: 700
+      &:not(:last-child)
+        border-right: 1px solid $blue
+      &:hover
+        opacity: 0.8
+      &--current
+        pointer-events: none
+        color: $black
+  &__subnav
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+    padding: 10px 0
+    background-color: $blue-light
+    &-item
+      flex-grow: 1
+      flex-shrink: 0
+      margin: 0 20px
+      text-align: center
+      &--current
+        pointer-events: none
+        color: $black
+
+@media only screen and (max-width: $tablet)
+  .header
+    margin-bottom: 30px
+    &__info
+      padding: 15px 0
+    &__logo
+      width: 130px
+      svg
+        width: 100%
+    &__desc
+      width: 230px
+      line-height: 16px
+      font-size: 13px
+    &__tel
+      line-height: 16px
+      font-size: 13px
+      &:not(:last-child)
+        margin-right: 30px
+    &__nav
+      &-item
+        min-height: 50px
+        padding: 10px 8px 10px 6px
+        line-height: 12px
+        font-size: 9px
+    &__subnav
+      &-item
+        font-size: 12px
+
+@media only screen and (max-width: $mobile)
+  .header
+    display: none
+  .header-mobile
+    z-index: 9999
+    position: fixed
+    top: 0
+    left: 0
+    display: block
+    width: 100%
+    padding: 15px 0
+    border-bottom: 1px solid $blue
+    background-color: #fff
+    &__top
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+    &__logo
+      width: 100px
+      svg
+        width: 100%
+    &__actions
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-end
+      align-items: center
+    &__call
+      width: 26px
+      height: 26px
+      margin-right: 25px
+      background:
+        image: url('../img/icons/phone.svg')
+        position: center
+        repeat: no-repeat
+    &__burger
+      width: 26px
+      height: 26px
+      background:
+        image: url('../img/icons/burger.svg')
+        position: center
+        repeat: no-repeat
+    &__desc
+      line-height: 13px
+      font-size: 10px
+  .header-menu
+    z-index: 999999
+    position: fixed
+    top: 0
+    left: 0
+    display: none
+    width: 100%
+    height: 100%
+    &__container
+      position: relative
+      width: 100%
+      height: 100%
+    &__backdrop
+      z-index: 1
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+    &__wrapper
+      z-index: 2
+      position: relative
+      min-height: 100%
+      width: 100%
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-end
+      align-items: flex-start
+    &__window
+      overflow-y: scroll
+      position: relative
+      height: 100vh
+      width: 250px
+      background-color: #fff
+      padding: 15px 20px 100px 20px
+    &__actions
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-end
+      align-items: center
+      margin-bottom: 25px
+    &__call
+      display: block
+      width: 26px
+      height: 26px
+      margin-right: 25px
+      background:
+        image: url('../img/icons/phone.svg')
+        position: center
+        repeat: no-repeat
+    &__close
+      width: 26px
+      height: 26px
+      background:
+        image: url('../img/icons/close-menu.svg')
+        position: center
+        repeat: no-repeat
+    &__main
+      margin-bottom: 25px
+      &-item
+        display: block
+        margin-bottom: 10px
+        text-transform: uppercase
+        line-height: 19px
+        font:
+          size: 14px
+          weight: 700
+    &__sub
+      margin-bottom: 35px
+      &-item
+        display: block
+        margin-bottom: 10px
+        line-height: 18px
+        font-size: 13px
+    &__phone
+      margin-bottom: 15px
+    &__tel
+      margin-bottom: 5px
+      line-height: 14px
+      font-size: 15px
+    &__desc
+      line-height: 14px
+      font-size: 12px

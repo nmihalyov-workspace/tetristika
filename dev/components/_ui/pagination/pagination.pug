@@ -1,0 +1,13 @@
+mixin pagination(pages, total)
+  section.pagination.container
+    .pagination__wrapper.wrapper
+      p.pagination__pages= pages
+      .pagination__controls
+        a.pagination__controls-item.pagination__controls-item--current(href="#") 1
+        a.pagination__controls-item(href="#") 2
+        a.pagination__controls-item(href="#") 3
+        a.pagination__controls-item(href="#") 4
+        a.pagination__controls-item(href="#") 5
+        a.pagination__controls-item(href="#") 6
+        a.pagination__controls-last(href="#") последняя
+      p.pagination__total= total

@@ -1,0 +1,39 @@
+include ../../_ui/input/input
+include ../../_ui/button/button
+include ../../callform/callform
+
+mixin popup(type)
+  .popup.js-popup(data-popup=type)
+    .popup__backdrop
+    .popup__container
+      .popup__wrapper
+        .popup__window
+          .popup__close.js-close-popup
+          if type === 'document'
+            .popup__content--document
+              img.popup__document.js-popup-document(src="", alt="")
+          if type === 'offer'
+            .popup__content--offer
+              .popup__offer-main
+                h2.popup__offer-heading Бесплатное обучение граждан пенсионного и предпенсионного возраста.
+                img.popup__offer-img(src="img/inhtml/offer-image.jpg", alt="")
+                p.popup__offer-desc Для работников автотранспортных организаций (АТП), автотранспортных цехов, участков иных организаций, предоставляющих услуги по техническому обслуживанию, ремонту и проверке технического состояния автотранспортных средств, а также на предпринимателей, осуществляющих перевозки грузов и пассажиров.
+              +callform('popup__offer-callform')
+          if type === 'request'
+            .popup__content--form
+              form.popup__form(action="")
+                h2.popup__form-heading Заявка на обучение
+                p.popup__form-desc оставьте данные, и наш менеджер перезвонит вам в течение рабочего дня
+                +input('tel', 'phone', 'номер телефона', 'popup__form-input', 'requried')
+                +input('email', 'email', 'email', 'popup__form-input', 'requried')
+                +button-fill('submit', 'Оставить заявку', '', 'popup__form-btn')
+                p.popup__form-policy Нажимая на кнопку «Оставить заявку», я даю согласие на обработку <a href="#" class="popup__form-policy-link">Персональных данных</a> и соглашаюсь c <a href="#" class="popup__form-policy-link">Политикой конфиденциальности</a>
+          if type === 'call'
+            .popup__content--form
+              form.popup__form(action="")
+                h2.popup__form-heading Заказать звонок
+                p.popup__form-desc оставьте данные, и наш менеджер перезвонит вам в течение рабочего дня
+                +input('tel', 'phone', 'номер телефона', 'popup__form-input', 'requried')
+                +input('email', 'email', 'email', 'popup__form-input', 'requried')
+                +button-fill('submit', 'Заказать звонок', '', 'popup__form-btn')
+                p.popup__form-policy Нажимая на кнопку «Заказать звонок», я даю согласие на обработку <a href="#" class="popup__form-policy-link">Персональных данных</a> и соглашаюсь c <a href="#" class="popup__form-policy-link">Политикой конфиденциальности</a>

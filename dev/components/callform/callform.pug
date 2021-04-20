@@ -1,0 +1,9 @@
+mixin callform(className)
+  form.callform(action="", class=className)
+    p.callform__heading Остались вопросы?<br>Бесплатный звонок по России — 8 800 500 35 59.<br>Москва — 8 495 098 04 74
+    p.callform__desc или оставьте номер, и наш менеджер перезвонит вам в течение рабочего дня
+    .callform__actions
+      +input('tel', 'tel', 'номер телефона', 'callform__input callform__input--tel', true)
+      +input('email', 'email', 'email', 'callform__input callform__input--email', true)
+      +button-fill('submit', 'Оставить заявку', '', 'callform__btn')
+    p.callform__policy Нажимая на кнопку «Перезвонить», я даю согласие на обработку <a href="#" class="callform__policy-link">Персональных данных</a> и соглашаюсь c <a href="#" class="callform__policy-link">Политикой конфиденциальности</a>

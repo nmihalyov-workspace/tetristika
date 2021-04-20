@@ -1,0 +1,10 @@
+include ../_ui/input/input
+include ../_ui/button/button
+include ../callform/callform
+
+mixin callback
+  section.callback
+    .callback__container.container
+      .callback__wrapper.wrapper
+        .callback__image
+        +callform('callback__form')

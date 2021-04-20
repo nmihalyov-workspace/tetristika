@@ -1,0 +1,108 @@
+.slider
+  position: relative
+  &__slide
+    &:not(:first-child)
+      display: none
+  &__controls
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    padding-top: 25px
+  &__counter
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+    height: 20px
+    &-num
+      color: $blue
+      line-height: 20px
+      font-size: 16px
+      &:first-child
+        margin-right: 20px
+    &-divider
+      width: 12px
+      height: 2px
+      margin-top: -3px
+      margin-right: 20px
+      background-color: $blue
+  &__arrows
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    width: 90px
+  &__arrow
+    cursor: pointer
+    transition: opacity .3s ease
+    &:hover
+      opacity: 0.5
+    &--small
+      position: absolute
+      top: calc(50% - 40px)
+      width: 20px
+      height: 20px
+      background-repeat: no-repeat
+      &.slider__arrow--prev
+        left: -50px
+        background:
+          image: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2218%22%20viewBox%3D%220%200%2010%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M9.48518%2017.4853L0.999897%209L9.48518%200.514719%22%20stroke%3D%22%2353AFCB%22%2F%3E%0A%3C%2Fsvg%3E%0A')
+          position: center
+      &.slider__arrow--next
+        right: -50px
+        background:
+          image: url('data:image/svg+xml,%3Csvg%20width%3D%2210%22%20height%3D%2218%22%20viewBox%3D%220%200%2010%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0.485281%2017.4853L8.97056%209L0.485281%200.514719%22%20stroke%3D%22%2353AFCB%22%2F%3E%0A%3C%2Fsvg%3E%0A')
+          position: center
+    &--big
+      width: 35px
+      height: 10px
+      background-repeat: no-repeat
+      &.slider__arrow--prev
+        background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2231%22%20height%3D%229%22%20viewBox%3D%220%200%2031%209%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M4.245%200L0%204.23L4.245%208.475L5.085%207.635L2.28%204.83H12.445V3.63H2.295L5.085%200.84L4.245%200Z%22%20fill%3D%22%2353AFCB%22%2F%3E%0A%3Cpath%20d%3D%22M12.445%204.83H30.3999V3.63H12.445V4.83Z%22%20fill%3D%22%2353AFCB%22%2F%3E%0A%3C%2Fsvg%3E%0A')
+      &.slider__arrow--next
+        background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2231%22%20height%3D%229%22%20viewBox%3D%220%200%2031%209%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M26.1554%200L30.4004%204.23L26.1554%208.475L25.3154%207.635L28.1204%204.83H17.9554V3.63H28.1054L25.3154%200.84L26.1554%200Z%22%20fill%3D%22%2353AFCB%22%2F%3E%0A%3Cpath%20d%3D%22M17.9554%204.83H0.000488281V3.63H17.9554V4.83Z%22%20fill%3D%22%2353AFCB%22%2F%3E%0A%3C%2Fsvg%3E%0A')
+        background-position-x: right
+
+@media only screen and (max-width: $tablet)
+  .slider
+    &__controls
+      padding-top: 15px
+    &__counter
+      height: 15px
+      &-num
+        font-size: 14px
+        &:first-child
+          margin-right: 15px
+      &-divider
+        width: 10px
+        height: 1px
+        margin-top: -1px
+        margin-right: 15px
+    &__arrow
+      &--small
+        display: none !important
+
+@media only screen and (max-width: $mobile)
+  .slider
+    &__controls
+      position: relative
+      justify-content: center
+      padding-top: 10px
+    &__counter
+      height: 16px
+      &-num
+        line-height: 16px
+        font-size: 12px
+        &:first-child
+          margin-right: 10px
+      &-divider
+        width: 10px
+        height: 1px
+        margin-top: -2px
+        margin-right: 10px
+    &__arrows
+      position: absolute
+      width: 100%
+      top: 50%
+      left: 0

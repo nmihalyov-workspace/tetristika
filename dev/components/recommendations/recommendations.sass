@@ -1,0 +1,117 @@
+.recommendations
+  margin-bottom: 75px
+  &__heading
+    margin-bottom: 40px
+    line-height: 36px
+    font:
+      size: 30px
+      weight: 100
+  &__companies
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 60px
+    &-item
+      &[data-logo="rcc"]
+        margin-top: -2px
+      &[data-logo="kamaz"]
+        margin-top: -10px
+      &[data-logo="sberbank"]
+        margin-top: 10px
+      &[data-logo="gazprom"]
+        margin-top: -25px
+      &[data-logo="russdragmet"]
+        margin-top: 10px
+  &__slide
+    padding-right: 15px
+  &__logo
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+    align-items: center
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    border: 1px solid $blue
+    margin-bottom: 15px
+    &-img
+      max-width: 65px
+      width: auto
+      height: auto
+  &__author
+    opacity: 0.5
+    margin-bottom: 18px
+    padding-left: 5px
+  &__feedback
+    padding-left: 5px
+
+@media only screen and (max-width: $tablet)
+  .recommendations
+    margin-bottom: 50px
+    &__heading
+      margin-bottom: 30px
+      font-size: 26px
+      line-height: 32px
+    &__companies
+      display: block
+      position: relative
+      white-space: nowrap
+      overflow: auto
+      width: 100vw
+      margin: -20px calc(-50vw + 364px) 30px calc(-50vw + 364px)
+      padding: 20px calc(50vw - 364px) 0 calc(50vw - 364px)
+      -ms-overflow-style: none
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        display: none
+      &-item
+        display: inline-block
+        &:not(:last-child)
+          margin-right: 40px
+    &__logo
+      width: 72px
+      height: 72px
+    &__author
+      margin-bottom: 10px
+      font-size: 14px
+    &__feedback
+      font-size: 14px
+
+@media only screen and (max-width: $mobile)
+  .recommendations
+    margin-bottom: 30px
+    &__heading
+      margin-bottom: 20px
+      padding-right: 20px
+      font-size: 22px
+      line-height: 27px
+    &__companies
+      margin: -20px calc(-50vw + 140px) 30px calc(-50vw + 140px)
+      padding: 20px calc(50vw - 140px) 0 calc(50vw - 140px)
+      &-item
+        width: 85px
+        &:not(:last-child)
+          margin-right: 30px
+        &[data-logo="sberbank"]
+          margin-top: 0
+        &[data-logo="russdragmet"]
+          margin-top: -5px
+    &__slider
+      padding-bottom: 25px
+      border-bottom: 1px solid $blue
+    &__logo
+      width: 68px
+      height: 68px
+      margin-bottom: 10px
+      &-img
+        max-width: 60px
+    &__author
+      margin-bottom: 10px
+      line-height: 18px
+      font-size: 12px
+      br
+        display: none
+    &__feedback
+      line-height: 18px
+      font-size: 12px

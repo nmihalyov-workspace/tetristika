@@ -1,0 +1,19 @@
+mixin button-line(type, text, link, className, popup, small)
+  if type === 'link'
+    a.button.button--line(class=`${small ? 'button--small' : ''} ${className ? className : ''}`, href=link)= text
+  else if type === 'link-external'
+    a.button.button--line(class=`${small ? 'button--small' : ''} ${className ? className : ''}`, href=link, target="_blank", rel="nofollow noopener")= text
+  else if type === 'popup'
+    button.button.button--line.js-open-popup(class=`${small ? 'button--small' : ''} ${className ? className : ''}`, data-popup=popup)= text
+  else if type === 'simple'
+    button.button.button--line(class=`${small ? 'button--small' : ''} ${className ? className : ''}`)= text
+
+mixin button-fill(type, text, link, className, popup, small)
+  if type === 'submit'
+    button.button.button--fill(tpye="submit", class=`${small ? 'button--small' : ''} ${className ? className : ''}`)= text
+  else if type === 'link'
+    a.button.button--fill(class=`${small ? 'button--small' : ''} ${className ? className : ''}`, href=link)= text
+  else if type === 'link-external'
+    a.button.button--fill(class=`${small ? 'button--small' : ''} ${className ? className : ''}`, href=link, target="_blank", rel="nofollow noopener")= text
+  else if type === 'popup'
+    button.button.button--fill.js-open-popup(class=`${small ? 'button--small' : ''} ${className ? className : ''}`, data-popup=popup)= text

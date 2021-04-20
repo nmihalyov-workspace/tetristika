@@ -1,0 +1,54 @@
+include ../_ui/section-heading/section-heading
+include ../_ui/section-subheading/section-subheading
+include ../documents/documents
+include ../_ui/form-card/form-card
+include ../_ui/staff-card/staff-card
+include ../callback/callback
+
+mixin about
+  section.about-main.container
+    .wrapper
+      .module
+        main.module__main
+          h1.about-main__heading Об институте
+          p.about-main__desc Помогаем бизнесу спокойно заниматься своей работой, не переживать о безопасности сотрудников и забыть о проверках и штрафах. Наша мечта — превратить «обязаловку» в интересное обучение, которое приносит пользу: работники знают, что делать в экстренных случаях, а у руководителей не дёргается глаз перед проверками. Хотим,  чтобы люди учились не ради корочек, а ради современных знаний, которые спасают жизни и берегут нервы.
+          +section-subheading('Доступные формы обучения')
+          .about-main__forms
+            +form-card('очно', 'Организуем очное обучение в любом городе России.')
+            +form-card('заочно', 'С применением дистанционных образовательных технологий.')
+        aside.module__aside.module__aside--hide
+          p.about-main__aside Напишите, если хотите стать партнёром института
+          a.link(href="mailto:info@ttristika.ru") info@ttristika.ru
+
+  section.container
+    .wrapper
+      +section-subheading('Наши лицензии и сертификаты')
+
+  +documents('about-licenses')
+
+  section.container
+    .wrapper
+      +section-subheading('Документы компании')
+
+  +documents('about-docs', true)
+
+  section.about-staff.container
+    .wrapper
+      +section-heading('В тетристике преподают эксперты со стажем от 8 до 25 лет.', 'За 3 года мы обучили, повысили квалификацию и переподготовили более 4000 сотрудников', 'about-staff__heading')
+      +section-subheading('Учредители')
+      .about-staff__block
+        +staff-card('staff-1.jpg', 'Алексей Попов', 'Учредитель')
+        +staff-card('staff-2.jpg', 'Илья Жигулин', 'Учредитель')
+      +section-subheading('Личные менеджеры и поддержка клиента')
+      .about-staff__block
+        +staff-card('staff-3.jpg', 'Роман Буздуган', 'Ведущий менеджер отдела развития')
+        +staff-card('staff-4.jpg', 'Игорь Гордиевский', 'Ведущий менеджер отдела развития')
+        +staff-card('staff-5.jpg', 'Дмитрий Пролеев', 'Менеджер отдела развития')
+        +staff-card('staff-6.jpg', 'Александра Харитонова', 'Менеджер отдела развития')
+
+  section.about-partner.container
+    .wrapper
+      p.about-partner__head Напишите, если хотите стать партнёром института
+      a.link(href="mailto:info@ttristika.ru") info@ttristika.ru
+
+  +callback

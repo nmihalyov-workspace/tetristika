@@ -1,0 +1,14 @@
+mixin staff-card(image, name, position, experience, areas)
+  .staff-card
+    .staff-card__image(style=`background-image: url('img/staff/${image}')`)
+    .staff-card__info
+      p.staff-card__name= name
+      p.staff-card__position= position
+      if experience
+        p.staff-card__experience Опыт работы – #{experience} лет
+    if areas
+      .staff-card__areas
+        p.staff-card__areas-heading Направления обучения
+        ul.staff-card__areas-list
+          each area in areas
+            li.staff-card__areas-item!= area

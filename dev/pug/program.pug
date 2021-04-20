@@ -1,0 +1,22 @@
+include ../components/header/header
+include ../components/program/program
+include ../components/_ui/pagination/pagination
+include ../components/callback/callback
+include ../components/footer/footer
+include ../components/_ui/popup/popup
+
+doctype
+html(lang="ru", prefix="og: http://ogp.me/ns#")
+  head
+    title т_тристика
+    include assets/_metas
+    include assets/_links
+    include assets/_scripts
+  body
+    .page-wrapper
+      +header('staff', 'program')
+      +program
+      +pagination('с 1 по 15', 'всего 205 программ')
+      +callback
+      +footer
+    +popup('request')

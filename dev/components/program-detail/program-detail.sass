@@ -1,0 +1,242 @@
+.program-detail
+  margin-bottom: 70px
+  &-courses
+    margin-bottom: 40px
+  &__main
+    margin-bottom: 45px
+  &__heading
+    width: 500px
+    margin-bottom: 15px
+    line-height: 36px
+    font:
+      size: 30px
+      weight: 100
+  &__desc
+    width: 700px
+    margin-bottom: 30px
+  &__subheading
+    margin-bottom: 10px
+    color: $blue
+  &__forms
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    align-items: stretch
+  &__plan
+    margin-bottom: 80px
+    border-bottom: 1px solid $blue
+    &-head
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 20px
+      .section-heading
+        margin: 0
+    &-btn
+      width: 185px
+      &--mobile
+        display: none
+    &-preview
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 15px
+      &--mobile
+        display: none
+      &-item
+        padding-right: 30px
+        color: $blue
+    &-content
+      display: none
+  &__table
+    &-head
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: center
+      padding-bottom: 15px
+      color: $blue
+    &-num
+      width: 110px
+    &-name
+      width: 595px
+      padding-right: 30px
+    &-hours
+      width: 80px
+    &-item
+      padding-bottom: 30px
+      border-top: 1px solid $blue
+    &-heading
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: flex-start
+      padding: 25px 0
+      line-height: 22px
+      font:
+        size: 16px
+        weight: 300
+    &-row
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: flex-start
+      padding: 15px 0
+      border-radius: 5px
+      &:nth-child(odd)
+        background-color: #fff
+      &:nth-child(even)
+        background-color: $blue-light
+      .program-detail__table-num
+        padding-left: 20px
+  &__warning
+    margin-bottom: 70px
+    padding: 30px 20px
+    border-radius: 5px
+    background-color: $blue-light
+    &-tag
+      width: 92px
+      height: 28px
+      margin-bottom: 25px
+      background-color: #000
+      color: #fff
+      text-align: center
+      line-height: 27px
+    &-desc
+      margin-bottom: 15px
+    &-list
+      margin: 0
+      padding-left: 14px
+    &-sub
+      margin: 20px 0 10px 0
+      color: $blue
+    &-btn
+      width: 190px
+      margin-top: 25px
+  &__aside
+    &-card
+      margin-bottom: 55px
+      padding: 25px 15px 30px 15px
+      border-radius: 5px
+      background-color: $blue-light
+    &-info
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: flex-start
+      margin-bottom: 20px
+    &-item
+      padding-right: 35px
+    &-name
+      margin-bottom: 3px
+      color: $blue
+      line-height: 19px
+    &-value
+      line-height: 36px
+      font-size: 30px
+    &-btn
+      width: 100%
+    &-content
+      padding: 0 20px 0 15px
+    &-heading
+      margin-bottom: 10px
+      line-height: 26px
+      font-size: 20px
+    &-desc
+      margin-bottom: 20px
+      font-size: 14px
+
+@media only screen and (max-width: $mobile)
+  .program-detail
+    margin-bottom: 30px
+    &-courses
+      margin-bottom: 10px
+    &__heading
+      width: 100%
+      margin-bottom: 15px
+      line-height: 24px
+      font-size: 19px
+    &__desc
+      width: 100%
+      margin-bottom: 15px
+      line-height: 16px
+      font-size: 12px
+    &__subheading
+      margin-bottom: 5px
+      line-height: 13px
+      font-size: 10px
+    &__main
+      margin-bottom: 15px
+    &__plan
+      margin-bottom: 40px
+      border-bottom: none
+      &-head
+        margin-bottom: 10px
+      &-btn
+        display: none
+        &--mobile
+          display: block
+          width: 100%
+      &-preview
+        display: none
+        &--mobile
+          display: block
+        &-item
+          padding-top: 4px
+          padding-right: 0
+    &__table
+      margin-top: 15px
+      &-head
+        padding: 5px 0
+        line-height: 13px
+        font-size: 10px
+      &-num
+        width: 35px
+      &-name
+        width: 220px
+        padding-right: 10px
+      &-hours
+        width: 25px
+      &-item
+        padding-bottom: 25px
+        &:last-child
+          border-bottom: 1px solid $blue
+      &-heading
+        padding: 15px 0
+        line-height: 16px
+        font-size: 12px
+      &-row
+        padding: 10px 0
+        line-height: 14px
+        font-size: 10px
+        .program-detail__table-num
+          padding-left: 10px
+    &__warning
+      margin-bottom: 30px
+      padding: 20px 15px
+      &-tag
+        height: 26px
+        margin-bottom: 10px
+        line-height: 25px
+        font-size: 11px
+      &-desc
+        margin-bottom: 10px
+        line-height: 16px
+        font-size: 12px
+      &-sub
+        margin-top: 15px
+        margin-bottom: 5px
+        line-height: 13px
+        font-size: 10px
+      &-list
+        &-item
+          margin-bottom: 5px
+          line-height: 16px
+          font-size: 12px
+          span
+            position: relative
+            left: -5px
+      &-btn
+        width: 100%
